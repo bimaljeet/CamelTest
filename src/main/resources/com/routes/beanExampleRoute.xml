@@ -1,0 +1,10 @@
+<route xmlns="http://camel.apache.org/schema/spring" trace="true">
+    <from uri="servlet:///beanExample"/>
+
+    <to uri="bean:camelRouteBean?method=camelBeanMethod" />
+
+    <setHeader headerName="Content-Type">
+        <constant>application/json</constant>
+    </setHeader>
+
+</route>

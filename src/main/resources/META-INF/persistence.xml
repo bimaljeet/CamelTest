@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+    <persistence-unit name="Messages" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <jta-data-source>java:jdbc/messages</jta-data-source>
+        <class>com.att.cspd.messages.persistence.entities.User</class>
+        <class>com.att.cspd.messages.persistence.entities.Message</class>
+        <class>com.att.cspd.messages.persistence.entities.MessageContent</class>
+        <class>com.att.cspd.messages.persistence.entities.MessageEndPoint</class>
+        <class>com.att.cspd.messages.persistence.entities.MessageJournal</class>
+        <class>com.att.cspd.messages.persistence.entities.Contact</class>
+        <class>com.att.cspd.messages.persistence.entities.ContactEndPoint</class>
+        <class>com.att.cspd.messages.persistence.entities.Conversation</class>
+        <class>com.att.cspd.messages.persistence.entities.ConversationEndPoint</class>
+        <class>com.att.cspd.messages.persistence.entities.MessageConversation</class>
+        <class>com.att.cspd.messages.persistence.entities.MesgEndpCntc</class>
+        <class>com.att.cspd.messages.persistence.entities.ConversationEndPointContactPK</class>
+        <class>com.att.cspd.messages.persistence.entities.ConversationEndPointContact</class>
+        <class>com.att.cspd.messages.persistence.entities.MetaConversation</class>
+        <class>com.att.cspd.messages.persistence.entities.MetaConversationConversation</class>
+        <class>com.att.cspd.messages.persistence.entities.MetaConversationConversationPK</class>
+        <properties>
+            <property name="hibernate.archive.autodetection" value="class"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>

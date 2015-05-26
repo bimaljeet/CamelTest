@@ -1,0 +1,6 @@
+
+att.messages.Persistence.v0.2.ConnectionUserName=encoreriak_msg2
+att.messages.Persistence.v0.2.ConnectionPassword=encoreriak_msg2
+att.messages.Persistence.v0.2.ConnectionURL=jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL =TCP)(HOST=asgldsora07-vip)(PORT=1521))(ADDRESS=(PROTOCOL=TCP)(HOST=asgldsora08-vip)(PORT=1521))(ADDRESS=(PROTOCOL=TCP)(HOST=asgldsora09-vip)(PORT=1521))(LOAD_BALANCE=off)(FAILOVER=on))(CONNECT_DATA=(SERVER=DEDICATED) (SERVICE_NAME=encd.asg.bellsouth.net)))
+att.messages.Persistence.v0.2.ConnectionDriverName=oracle.jdbc.driver.OracleDriver
+att.messages.Persistence.v0.2.Log=DefaultLevel=WARN, Tool=INFO

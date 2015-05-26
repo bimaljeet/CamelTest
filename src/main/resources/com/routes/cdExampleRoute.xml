@@ -1,0 +1,6 @@
+<route xmlns="http://camel.apache.org/schema/spring" trace="true">
+    <from uri="servlet:///cdExample"/>
+
+    <to uri="xslt:file:C:/apps/apache-tomcat-7.0.47/apache-tomcat-7.0.47/webapps/CamelTestApp/WEB-INF/classes/com/docs/cdExample.xslt"/>
+
+</route>
